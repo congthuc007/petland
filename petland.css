@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    color: #333;
+    background-image: url('Backgound.png');
+    background-size: cover;   
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Header */
+#header {
+    background-color: rgba(204, 245, 249, 0.478);
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên cùng */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+#header .logo img {
+    height: 65px;
+}
+
+/* Menu */
+#menu {
+    display: flex;
+    gap: 20px;
+}
+
+#menu .item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+#menu .item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+#menu .item a:hover {
+    color: #007BFF;
+}
+
+/* Tìm kiếm */
+#khungtimkiem {
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.nuttiemkiem {
+    padding: 6px 12px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.nuttiemkiem:hover {
+    background-color: #0056b3;
+}
+
+.itemimg {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.itemimg img {
+    height: 30px;
+}

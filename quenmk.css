@@ -1,0 +1,101 @@
+body {
+    background-image: url("Backgound.png");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed; /* Giữ hình ảnh cố định */
+    background-position: center; 
+    font-family: Arial, sans-serif;
+  }
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(204, 245, 249, 0.485);
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên cùng */
+    display: flex;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #ddd;
+  }
+header .logo img {
+    height: 100px;
+}
+  .trong {
+    background-color: rgba(204, 245, 249, 0.479);
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    padding: 30px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid #328bcb;
+  }
+  .chuemail{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #tendn{
+    position: fixed;
+    top: 137px;
+    left: 4px;
+  }
+  #email{
+    position: fixed;
+    top: 130px;
+    left: 30px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .chusdt{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 160px;
+  }
+  #tensdt{
+    position: fixed;
+    top: 207px;
+    left: 4px;
+  }
+  #sdt{
+    position: fixed;
+    top: 200px;
+    left: 30px;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .dangnhap {
+    text-decoration: none;
+  }
+  h4 {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .nutdangnhap {
+    position: fixed;
+    top: 260px;
+    left: 105px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(23, 152, 251);
+  }
+  .dangnhap:hover {
+    background-color: rgb(105, 164, 246);
+  }
