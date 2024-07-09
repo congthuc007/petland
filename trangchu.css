@@ -90,3 +90,7 @@ header .logo, .search , .menu{
 .item a:hover {
     color: #007BFF;
 }
+
+.search .item .title{
+    margin-right: -15px;
+}
