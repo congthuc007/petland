@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en"> 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quên mật khẩu</title>
     <link rel="stylesheet" href="quenmk.css" />
     <link rel="icon" href="Logo.png" type="image/x-icon">
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <a href="index.html" class="logo">
-        <img src="LogoWithName.png" alt="">
-      </a>
+        <a href="index.html" class="logo">
+            <img src="LogoWithName.png" alt="">
+        </a>
     </header>
-    <main class="trong">
-      <h1>Lấy lại mật khẩu</h1>
-      <div id="gioitinh">
-        <h5 class="chuemail">Vui lòng điền email </h5>
-        <div class="khungemail">
-          <input type="radio" id="tendn" name="gender" value="tendn" required>
-          <input type="text" name="email" id="email" placeholder="Email/Tên đăng nhập" />
+    <div class="box">
+        <div class="item">
+            <h1>Lấy lại mật khẩu</h1>
         </div>
-        <div>
-          <h5 class="chusdt">Vui lòng điền số điện thoại</h5>
-        </div class="khungsdt">
-          <input type="radio" id="tensdt" name="gender" value="tensdt" required >
-          <input type="text" name="sdt" id="sdt" placeholder="Số điện thoại" />
+        <div class="item">
+            <h5>Vui lòng điền email/tên đăng nhập:</h5>
+        </div>
+        <div class="item">
+                <input class="tick" type="radio" id="tendn" name="gender" value="tendn" required>
+                <input class="in" type="text" name="email" id="email" placeholder="Email/Tên đăng nhập" />
+        </div>
+        <div class="item">
+            <h5>Vui lòng điền số điện thoại:</h5>
+        </div>
+        <div class="item">
+                <input class="tick" type="radio" id="tensdt" name="gender" value="tensdt" required >
+                <input class="in" type="text" name="sdt" id="sdt" placeholder="Số điện thoại"/>
+        </div>
+        <div class="item">
+            <a href="dangnhap.html"><button>Tiếp theo</button></a>
         </div>
     </div>
-      <p></p>
-      <a class="dangnhap" href="dangnhap.html"><button class="nutdangnhap" type="button"><h4>Tiếp theo </h4></button></a>
-    </main>
-  </body>
+</body>
 </html>

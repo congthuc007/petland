@@ -1,92 +1,83 @@
-body {
-    background-image: url('Backgound.png');
-    background-size: cover;   
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed; 
-    background-position: center; 
-    font-family: Arial, sans-serif;
+body{
+  background-image: url('Backgound.png');
+  background-size: cover;   
+  background-attachment: fixed;
+  background-position: center; 
+  font-family: Arial, sans-serif;
 }
-header{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+
+header {
   width: 100%;
-  height: 100px;
+  height: auto;
   background-color: rgba(204, 245, 249, 0.478);
-  z-index: 1; /* Đảm bảo lớp phủ nằm trên cùng */
   display: flex;
+  margin: 0;
+  z-index: 1;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.tieude {
-    font-size: 40px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-  #tendangnhap,
-  #email,
-  #matkhau,
-  #nhaplaimatkhau, #sdt {
-    height: 30px;
-    width: 300px;
-    border-radius: 5px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  
-  h6 {
-    font-weight: normal;
-    font-size: 11px;
-    width: 305px;
-    margin: auto;
-    display: flex;
-    justify-content: left;
-  }
-  hr{
-    width: 300px;
-  }
 
 header .logo img {
-    height: 100px;
+  height: 100px;
 }
-  .trong {
-    background-color: rgba(204, 245, 249, 0.486);
-    width: 300px;
-    height: 350px;
-    margin: 0 auto;
-    padding: 30px;
-    position:absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    border-radius: 10px;
-    border: 1px solid #328bcb;
-    border-bottom: 1px solid #ddd;
-  }
 
-  .nutdangky {
-    text-decoration: none;
-  }
-  h4 {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-  }
-  .dangky {
-    height: 30px;
-    width: 305px;
-    border-radius: 5px;
-    margin: auto;
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    background-color: rgb(23, 152, 251);
-  }
-  .dangky:hover {
-    background-color: rgb(105, 164, 246);
-  }
+.box{
+  background-color: rgba(204, 245, 249, 0.488);
+  width: 300px;
+  height: 390px;
+  margin: 0 auto;
+  padding: 30px;
+  position:absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  border-radius: 10px;
+  border: 1px solid #328bcb;
+}
+
+.box .item{
+  display: flex;
+  justify-content: center; 
+  margin: 10px;
+}
+
+.item h1{
+  font-size: 50px;
+  margin: -5px 0px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.item input{
+  flex: 1;
+  height: 30px;
+  border-radius: 5px; 
+  margin: auto;
+}
+
+.item h6 {
+  font-weight: normal;
+  font-size: 11px;
+  width: 305px;
+  margin: -5px 0px 3px;
+}  
+
+.item hr{
+  color: #ddd;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.item button{
+  height: 30px;
+  width: 278px;
+  background-color:rgb(87, 181, 253);
+  border-radius: 5px;  
+}
+
+.item button:hover{
+  background-color: rgb(105, 164, 246);
+}

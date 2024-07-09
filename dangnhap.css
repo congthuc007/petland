@@ -1,27 +1,31 @@
 body{
     background-image: url('Backgound.png');
     background-size: cover;   
-    margin: 0;
-    padding: 0;
-    background-attachment: fixed; /* Giữ hình ảnh cố định */
+    background-attachment: fixed;
     background-position: center; 
     font-family: Arial, sans-serif;
 }
 
 header {
     width: 100%;
-    height: 65px;
+    height: auto;
     background-color: rgba(204, 245, 249, 0.478);
-    z-index: 1; /* Đảm bảo lớp phủ nằm trên cùng */
     display: flex;
+    margin: 0;
+    z-index: 1;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 header .logo img {
-    height: 65px;
+    height: 70px;
 }
-.trong{
+
+.box{
     background-color: rgba(204, 245, 249, 0.488);
     width: 300px;
     height: 390px;
@@ -34,79 +38,73 @@ header .logo img {
     border-radius: 10px;
     border: 1px solid #328bcb;
 }
-.logonho{
-    width: 150px;
-    margin: auto;
+
+.box .item{
     display: flex;
     justify-content: center; 
-}
-#tendangnhap{
-    height: 30px;
-    width: 300px;
-    border-radius: 5px; 
-    margin: auto;
-    display: flex;
-    justify-content: center; 
-}
-#matkhau{
-    height: 30px;
-    width: 300px;
-    border-radius: 5px; 
-    margin: auto;
-    display: flex;
-    justify-content: center; 
+    margin: 10px;
 }
 
-.dangnhap{
+.box img{
+    width: 150px;
+    margin-top: -15px;
+}
+
+.item .account{
+    flex: 1;
     height: 30px;
-    width: 305px;
-    border-radius: 5px;  
+    border-radius: 5px; 
     margin: auto;
-    margin-top: -10px;
-    display: flex;
-    justify-content: center;  
+}
+
+.item .remember input{
+    height: 10px;
+}
+
+.item .remember label{
+    font-size: 13px;
+}
+
+.item .remember{
+    margin-right: 65%;
+}
+
+.item .forgetpw{
+    font-size: small;
+    text-decoration: none;
+}
+
+.item button{
+    border-radius: 6px;  
+}
+
+.item .login button{
+    height: 30px;
+    width: 278px;
     background-color:rgb(87, 181, 253);
 }
-.dangnhap:hover{
+
+.item .sign-in button{
+    height: 30px;
+    width: 139px;
+    background-color: rgb(14, 164, 52);
+}
+
+.login button:hover{
     background-color:rgb(147, 190, 249);
 }
-.dangky:hover{
+.sign-in button:hover{
     background-color:rgb(25, 190, 91);
 }
 
-h4 {
-    margin: 5px;
-}
-.nutdangnhap,.nutdangky{
-    text-decoration: none;
+.item .forgetpw:hover{
+    color:rgb(255, 0, 0);
 }
 
-label{
-    margin-top: 3px;
-    font-size: 12px;
-}
-.quenmatkhau{
-    margin: auto;
-    display: flex;
-    justify-content: center; 
-    font-size: small;
-    margin-top: -10px;
-    text-decoration: none;
+.item hr{
+    color: #ddd;
+    width: 100%;
+    margin-top: -5px;
 }
 
-.ghinho{
-    margin-left: 10px;
-    margin-top: 10px; 
-    display: flex;
-}
 
-.dangky{
-    height: 30px;
-    width: 150px;
-    border-radius: 5px;  
-    margin: auto;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;  
-    background-color:rgb(57, 238, 129);
-}
