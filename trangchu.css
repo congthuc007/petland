@@ -34,7 +34,8 @@ header .logo, .search , .menu{
     display: flex;
     align-items: center;
     text-decoration: none;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex: 1;
 }
 
 .search .item, .menu .item{
@@ -70,14 +71,9 @@ header .logo, .search , .menu{
     background-color: #0056b3;
 }
 
-.menu ,.search{
+.search, .menu{
     display: flex;
     gap: 20px;
-}
-
-.menu .item , .search.item {
-    display: flex;
-    align-items: center;
 }
 
 .item a {
