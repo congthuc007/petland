@@ -1,0 +1,96 @@
+body{
+    background-image: url('Backgound.png');
+    background-size: cover;   
+    background-attachment: fixed;
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: rgba(204, 245, 249, 0.478);
+    display: flex;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .search img, .menu img{
+    height: 30px;
+}
+
+header .logo, .search , .menu{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.search .item, .menu .item{
+    display: flex;
+}
+
+.itemimg {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#khungtimkiem {
+    height: 15px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 180px;
+}
+
+.nuttiemkiem {
+    width: 70px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+.nuttiemkiem:hover {
+    background-color: #0056b3;
+}
+
+.menu ,.search{
+    display: flex;
+    gap: 20px;
+}
+
+.menu .item , .search.item {
+    display: flex;
+    align-items: center;
+}
+
+.item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.item a:hover {
+    color: #007BFF;
+}
+
+.search .item .title{
+    margin-right: -15px;
+}
